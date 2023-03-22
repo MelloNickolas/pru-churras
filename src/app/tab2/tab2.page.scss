@@ -1,8 +1,40 @@
-.color-text{
+.toolbar{
   --background: firebrick;
   text-align: center;
   color: whitesmoke;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 .back{
   --background: url(https://www.bemcolar.com/media/catalog/product/cache/1/image/9df78eab33525d08d6e5fb8d27136e95/p/a/papel-de-parede-galhos-e-flores-vermelhas.jpg);
+}
+.valendo{
+  --background: whitesmoke;
+  text-align: center;
+  color: firebrick;
+  border-radius: 5%;
+  --border-color: firebrick;
+}
+
+.fonte{
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-size:x-large;
+}
+
+.buttons{
+ --background:firebrick;
+ color: whitesmoke;
+}
+.buttons2{
+  --background:firebrick;
+  color: whitesmoke;
+  width: 40%;
+}
+
+.espacamento{
+  padding-top: 2vh;
+}
+
+.midButton{
+  display: flex;
+  justify-content: center;
 }

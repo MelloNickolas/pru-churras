@@ -1,54 +1,72 @@
-<ion-header [translucent]="true" >
-  <ion-toolbar class="color-text">
-    <ion-title>
-      Contador de truco
-    </ion-title>
+<ion-header [translucent]="true">
+  <ion-toolbar class="toolbar">
+    <ion-title> Contador de truco </ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="true" class="back" >
-
+<ion-content [fullscreen]="true" class="back">
   <ion-grid>
-    <ion-row>
+    <ion-row class="espacamento">
       <ion-col>
-        <ion-item>
-          <ion-label > Valendo </ion-label>
-          <h1>{{valendo}}</h1>
+        <ion-item class="valendo">
+          <ion-label class="fonte"> Valendo : {{valendo}}</ion-label>
         </ion-item>
       </ion-col>
     </ion-row>
 
     <ion-row>
       <ion-col>
-        <ion-button (click)="btn1()"> 1 </ion-button>
+        <ion-button (click)="btn1()" expand="full" class="buttons">
+          1
+        </ion-button>
       </ion-col>
       <ion-col>
-        <ion-button (click)="btn3()"> 3  </ion-button>
+        <ion-button (click)="btn3()" expand="full" class="buttons">
+          3
+        </ion-button>
       </ion-col>
       <ion-col>
-        <ion-button (click)="btn6()"> 6 </ion-button>
+        <ion-button (click)="btn6()" expand="full" class="buttons">
+          6
+        </ion-button>
       </ion-col>
       <ion-col>
-        <ion-button (click)="btn9()"> 9 </ion-button>
+        <ion-button (click)="btn9()" expand="full" class="buttons">
+          9
+        </ion-button>
       </ion-col>
       <ion-col>
-        <ion-button (click)="btn12()"> 12 </ion-button>
+        <ion-button (click)="btn12()" expand="full" class="buttons">
+          12
+        </ion-button>
       </ion-col>
     </ion-row>
 
-    <ion-row>
+    <ion-row class="espacamento">
       <ion-col>
-        <ion-item>time 1</ion-item>
-        <ion-button (click)="mais1()"> + </ion-button>
+        <ion-item class="valendo">
+          <ion-label class="fonte"> TIME 1 </ion-label>
+        </ion-item>
+        <div class="midButton">
+          <ion-button (click)="mais1()" class="buttons2"> + </ion-button>
+        </div>
         <ion-card>{{pontos1}}</ion-card>
-        <ion-button (click)="menos1()"> - </ion-button>
+        <div class="midButton">
+          <ion-button (click)="menos1()" class="buttons2"> - </ion-button>
+        </div>
       </ion-col>
 
       <ion-col>
-        <ion-item>time 2</ion-item>
-        <ion-button (click)="mais2()"> + </ion-button>
+        <ion-item class="valendo">
+          <ion-label class="fonte"> TIME 2 </ion-label>
+        </ion-item>
+        <div class="midButton">
+          <ion-button (click)="mais2()" class="buttons2"> + </ion-button>
+        </div>
         <ion-card>{{pontos2}}</ion-card>
-        <ion-button (click)="menos2()"> - </ion-button>
+        <div class="midButton">
+          <ion-button (click)="menos2()" class="buttons2"> - </ion-button>
+        </div>
       </ion-col>
     </ion-row>
 
@@ -70,5 +88,4 @@
 
     <ion-button (click)="limpar()"> Limpar </ion-button>
   </ion-grid>
-
 </ion-content>

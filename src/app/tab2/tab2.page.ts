@@ -12,7 +12,6 @@ export class Tab2Page {
   pontos2 = 0;
   ganhou1 = 0;
   ganhou2 = 0;
-
   constructor() {}
 
 
