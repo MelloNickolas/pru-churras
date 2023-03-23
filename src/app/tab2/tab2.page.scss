@@ -1,18 +1,18 @@
 .toolbar{
-  --background: firebrick;
+  --background: black;
   text-align: center;
   color: whitesmoke;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 .back{
-  --background: url(https://www.bemcolar.com/media/catalog/product/cache/1/image/9df78eab33525d08d6e5fb8d27136e95/p/a/papel-de-parede-galhos-e-flores-vermelhas.jpg);
+  --background: url(https://img.freepik.com/vetores-gratis/fundo-branco-abstrato_23-2148844576.jpg);
 }
 .valendo{
   --background: whitesmoke;
   text-align: center;
-  color: firebrick;
+  color: black;
   border-radius: 5%;
-  --border-color: firebrick;
+  --border-color: black;
 }
 
 .fonte{
@@ -21,11 +21,11 @@
 }
 
 .buttons{
- --background:firebrick;
+ --background: black;
  color: whitesmoke;
 }
 .buttons2{
-  --background:firebrick;
+  --background:black;
   color: whitesmoke;
   width: 40%;
 }
@@ -37,4 +37,18 @@
 .midButton{
   display: flex;
   justify-content: center;
+}
+
+.pontos{
+  text-align: center;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-size:x-large;
+  color: black;
+}
+.back-pontos{
+  height: 70px;
+  width: 70px;
+  border-radius: 50%;
+  border-style: solid;
+  border-color: black;
 }

@@ -47,10 +47,16 @@
         <ion-item class="valendo">
           <ion-label class="fonte"> TIME 1 </ion-label>
         </ion-item>
+
         <div class="midButton">
           <ion-button (click)="mais1()" class="buttons2"> + </ion-button>
         </div>
-        <ion-card>{{pontos1}}</ion-card>
+
+        <div class="midButton">
+          <ion-card class="back-pontos">
+            <ion-card-content class="pontos">{{pontos1}}</ion-card-content>
+          </ion-card>
+        </div>
         <div class="midButton">
           <ion-button (click)="menos1()" class="buttons2"> - </ion-button>
         </div>
@@ -63,29 +69,44 @@
         <div class="midButton">
           <ion-button (click)="mais2()" class="buttons2"> + </ion-button>
         </div>
-        <ion-card>{{pontos2}}</ion-card>
+
+        <div class="midButton">
+          <ion-card class="back-pontos">
+            <ion-card-content class="pontos">{{pontos2}}</ion-card-content>
+          </ion-card>
+        </div>
+
         <div class="midButton">
           <ion-button (click)="menos2()" class="buttons2"> - </ion-button>
         </div>
       </ion-col>
     </ion-row>
 
+    <ion-row class="espacamento">
+      <ion-item class="valendo">
+        <ion-label class="fonte"> PARTIDAS </ion-label>
+      </ion-item>
+    </ion-row>
+
     <ion-row>
       <ion-col>
-        <ion-label>Partidas</ion-label>
+        <ion-item class="valendo">
+          <ion-label class="fonte"> Time 1 : </ion-label>
+          <ion-label class="fonte">{{ganhou1}}</ion-label>
+        </ion-item>
       </ion-col>
     </ion-row>
 
     <ion-row>
-      <ion-item>Time 1</ion-item>
-      <ion-card>{{ganhou1}}</ion-card>
+      <ion-col>
+        <ion-item class="valendo">
+          <ion-label class="fonte"> Time 2 : </ion-label>
+          <ion-label class="fonte">{{ganhou2}}</ion-label>
+        </ion-item>
+      </ion-col>
     </ion-row>
-
-    <ion-row>
-      <ion-item>Time 2</ion-item>
-      <ion-card>{{ganhou2}}</ion-card>
-    </ion-row>
-
-    <ion-button (click)="limpar()"> Limpar </ion-button>
+    <div class="midButton">
+      <ion-button (click)="limpar()" class="buttons2"> Limpar </ion-button>
+    </div>
   </ion-grid>
 </ion-content>
