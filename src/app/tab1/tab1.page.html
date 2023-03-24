@@ -1,20 +1,19 @@
 <ion-header [translucent]="true">
-  <ion-toolbar>
+  <ion-toolbar class="toolbar">
     <ion-title>
-      Cara ou coroa
+      Cara ou Coroa
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="true">
+<ion-content [fullscreen]="true" class="back">
   <div class="container-coin">
     <img [@rotatedState]="state" [src]="image" alt="" />
-    <h1>{{info}}</h1>
+    <h1 class="fonte">{{info}}</h1>
+  </div>
+  <div class="midButton">
+    <ion-button (click)="jogarMoeda()" > JOGAR A MOEDA </ion-button>
   </div>
 </ion-content>
 
-<ion-footer >
-  <ion-toolbar (click)="jogarMoeda()" class="btn" color="danger">
-    <ion-title class="ion-text-center">Jogar a moeda</ion-title>
-  </ion-toolbar>
-</ion-footer>
+

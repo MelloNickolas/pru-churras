@@ -11,7 +11,6 @@ img{
   height: 50%;
   border-radius: 50%;
   box-shadow:  14px 14px 15px #8f8f8f,
-              -14px -14px 20px #ffffff;
 
 }
 
@@ -22,3 +21,28 @@ h1{
 .btn{
   cursor: pointer;
 }
+
+.toolbar{
+  --background: url(https://img.freepik.com/vetores-gratis/papel-de-parede-abstrato-branco_23-2148830026.jpg);
+  text-align: center;
+  color: goldenrod;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.back{
+  --background: url(https://img.freepik.com/vetores-gratis/papel-de-parede-abstrato-branco_23-2148830026.jpg);
+}
+.fonte{
+  text-align: center;
+  color: goldenrod;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.midButton{
+  display: flex;
+  justify-content: center;
+}
+.buttons2{
+  --background: whitesmoke;
+  color: goldenrod;
+  width: 40%;
+}
+
